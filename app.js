@@ -42,17 +42,6 @@ if (process.env.JAWSDB_URL){
 })
 }
 
-// db.connect((error) => {
-//     if(error){
-//         console.log(error)
-//     }else {
-//         console.log("MYSQL Connected...")
-//     }
-// })
-
-
-// Define Rotas//
-
 
 
 app.use('/', require('./routes/pages'))
@@ -61,6 +50,6 @@ app.use('/checkout', require('./routes/checkout'))
 
 app.use('/auth', require('./routes/auth'));
 
-app.listen(process.env.PORT || 5000, () => {
-    console.log("Server started on Port 5000")
+app.listen(process.env.PORT || 3306, () => {
+    console.log("Server started on Port 3306")
 })
