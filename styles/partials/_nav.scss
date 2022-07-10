@@ -4,7 +4,6 @@ nav {
     position: fixed;
     z-index: 10;
     display: grid;
-    place-items: center;
     @include gradientBackground;
     box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
     cursor: pointer;

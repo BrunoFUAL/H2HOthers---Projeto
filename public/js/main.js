@@ -1,9 +1,9 @@
 let carts = document.querySelectorAll(".add-cart");
-let stage = 'prd';
+let stage = 'dev';
 let products = [];
 
 async function getProducts() {
-  const host = stage === 'dev' ? 'http://localhost:3306' : 'https://h2hothers.herokuapp.com';
+  const host = stage === 'dev' ? 'http://localhost:5000' : 'https://h2hothers.herokuapp.com';
   const response = await axios.get(`${host}/products`);
   console.log(response.data);
   products = response.data.products;
@@ -304,11 +304,15 @@ function loadComments() {
 
 function inserirComentario() {
   var xhttp = new XMLHttpRequest();
+  const inputs = document.querySelectorAll('#name, #message');
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       var result = this.responseText;
       console.log(result);
       loadComments();
+      inputs.forEach(input => {
+        input.value = '';
+      });
     }
   };
 

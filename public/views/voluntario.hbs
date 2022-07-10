@@ -32,15 +32,14 @@
   <nav>
 
     <div class="container">
-      <a href="/"> <img src="../images/logo_final.png" alt="Card image" style="width:20%"></a>
-      <a href="h3" class="nav__logo">
-        <h3>H2HOthers - Olá {{user.name}}, bem vindo de volta </h3>
-      </a>
+      <a href="/"> <img src="../images/logo_final.png" alt="Card image" style="width:30%"></a>
+        <h3>H2HOthers - Olá {{user.name}}, bem vindo de volta</h3>
+
 
       <ul id="nav__items">
-        <li><a href="/">Página Inicial</a></li>
-        <li><a href="/auth/logout">Logout</a></li>
+        <li><a class="btn cta1" onclick="window.location.href ='/';">Página Inicial</a></li>
         <li><a class="btn cta" onclick="window.location.href ='loja';">Loja Online</a></li>
+        <li><a class="btn cta3" onclick="window.location.href ='/auth/logout';">Logout</a></li>
       </ul>
 
       <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
@@ -239,7 +238,7 @@
 
         <div id="main-content">
           <div id="make-comment">
-            <div class="form-group">
+            <div class="form-group" id="myform">
               <label for="name">Nome</label>
               <input style="width:250px" class="form-control" type="text" id="name" required>
             </div>
