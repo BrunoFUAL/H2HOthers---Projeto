@@ -206,4 +206,5 @@ No rodapé o voluntário terá acesso aos contatos da H2Hothers, as diferentes p
 
 
 
-[Axexo I - Manual de Utilizador.pdf](https://github.com/BrunoFUAL/UAL_H2HOthers_vFinal/files/9079029/Axexo.I.-.Manual.de.Utilizador.pdf)
+[Manual de Utilizador - H2Hothers.pdf](https://github.com/BrunoFUAL/H2HOthers---Projeto/files/9080054/Manual.de.Utilizador.-.H2Hothers.pdf)
+
